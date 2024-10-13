@@ -60,11 +60,6 @@ section {
 section p {
   color: darkblue;
 }
-img {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
 /* flex layout for responsiveness */
 @media (min-width: 700px) {
   main {
