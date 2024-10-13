@@ -1,50 +1,78 @@
 /* make the body background colorful */
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:azure;
-    color: black;
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgba(196, 196, 231, 0.507);
+  color: black;
 }
 /* styling the header */
-header{
-    background-color: cornflowerblue ;
-    text-align: center;
+header {
+  background-color: rgb(231, 131, 206);
+  text-align: center;
+  padding: 20px;
 }
 /* navigation menu */
-nav ul{
-    list-style-type: none;
+nav ul {
+  list-style-type: none;
 }
-nav ul li{
-    display: inline;
-    margin: 0 1rem;
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
 }
-nav ul li a{
-    text-decoration: none;
-    color:rgb(255, 251, 0);
-    font-weight: bold;
-    transition: color 0.3s ease;
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 251, 0);
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
-nav ul li a:hover{
-    color: darkblue;
+nav ul li a:hover {
+  color: darkblue;
 }
 /* styling table */
 table {
-    margin:0cap;
-    border-collapse: collapse;
-    width: 100%;
+  margin: 0cap;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-table th, table td {
-    border: 1px solid black;
-    padding: 8px;
+table th,
+table td {
+  border: 1px solid black;
+  padding: 8px;
 }
 
 table th {
-    background-color:rgb(231, 131, 206);
-    color: white;
+  background-color: rgb(138, 175, 245);
+  color: white;
 }
+/* styling footer */
+footer p {
+  text-align: center;
+  color: grey;
+}
+/* stylig section */
+section {
+  background-color: azure;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+}
+section p {
+  color: darkblue;
+}
+img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+/* flex layout for responsiveness */
 @media (min-width: 700px) {
-    main{
-        flex-direction: row;
-        justify-content: space-around;
-    }
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+main {
+  display: flex;
+  flex-direction: column;
 }
